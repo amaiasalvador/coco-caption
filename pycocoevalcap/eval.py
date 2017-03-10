@@ -35,13 +35,14 @@ class COCOEvalCap:
         # Set up scorers
         # =================================================
         print ('setting up scorers...')
+
         scorers = [
             (Bleu(4), ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),
-            (Meteor(),"METEOR"),
+            (Cider(), "CIDEr"),
             (Rouge(), "ROUGE_L"),
-            (Cider(), "CIDEr")
-        ]
-
+            ]
+            #(Meteor(),"METEOR")
+        
         # =================================================
         # Compute scores
         # =================================================
