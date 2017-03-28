@@ -16,7 +16,6 @@ def get_parser():
 parser = get_parser()
 args_dict = parser.parse_args()
 
-
 ann_file = args_dict.ann_file
 
 #results_file = os.path.join(args_dict.data_folder, 'results',
