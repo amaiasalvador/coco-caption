@@ -21,6 +21,7 @@ ann_file = args_dict.ann_file
 #results_file = os.path.join(args_dict.data_folder, 'results',
 #                          args_dict.model_name +'_gencaps.json')
 results_file = args_dict.results_file
+print "Evaluating %s"%(args_dict.results_file)
 coco = COCO(ann_file)
 cocoRes = coco.loadRes(results_file)
 
